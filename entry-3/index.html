@@ -1,75 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beef Wellington Recipe</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            max-width: 800px;
-        }
-        h1 {
-            color: #333;
-        }
-        h2 {
-            color: #666;
-            margin-top: 30px;
-        }
-        ul, ol {
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Course Meal - Entree</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      color: #f5f5f5;
+      line-height: 1.6;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 50px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      text-align: center;
+      color: #d4af37;
+      margin-bottom: 15px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    
+    .course-label {
+      text-align: center;
+      font-size: 0.9em;
+      color: #c9a961;
+      letter-spacing: 2px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+    
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      color: #d4af37;
+      margin: 40px 0 20px 0;
+      border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+      padding-bottom: 10px;
+    }
+    
+    .dish-intro {
+      font-size: 1.1em;
+      font-style: italic;
+      color: #e0e0e0;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    
+    .recipe-section {
+      margin: 30px 0;
+    }
+    
+    h3 {
+      font-family: 'Playfair Display', serif;
+      color: #c9a961;
+      font-size: 1.4em;
+      margin: 25px 0 15px 0;
+    }
+    
+    .ingredients-list {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 4px solid #d4af37;
+      margin: 20px 0;
+    }
+    
+    .ingredients-list ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    
+    .ingredients-list li {
+      padding: 8px 0;
+      padding-left: 25px;
+      position: relative;
+      color: #e0e0e0;
+    }
+    
+    .ingredients-list li:before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #d4af37;
+      font-weight: bold;
+    }
+    
+    .image-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      border: 3px solid rgba(212, 175, 55, 0.3);
+    }
+    
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.5), transparent);
+      margin: 50px 0;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+      }
+      
+      h1 {
+        font-size: 2em;
+      }
+      
+      h2 {
+        font-size: 1.6em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Beef Wellington</h1>
+  <div class="container">
+    <h1>Full Course Meal</h1>
+    <p class="course-label">Main Course - Entree</p>
     
-    <img src=entry-3/16899-beef-wellington-DDMFS-4x3-84b7691972174478bfb16b465cdaf0d2.webp" 
-    <p>A classic dish featuring beef tenderloin wrapped in mushroom duxelles and puff pastry.</p>
+    <h2>Beef Wellington</h2>
+    <p class="dish-intro">A classic British dish featuring tender beef tenderloin wrapped in mushroom duxelles and golden puff pastry</p>
     
-    <h2>Ingredients</h2>
+    <div class="recipe-section">
+      <h3>Ingredients</h3>
+      
+      <div class="ingredients-list">
+        <strong>For the Beef:</strong>
+        <ul>
+          <li>2 lb beef tenderloin, center cut</li>
+          <li>2 tablespoons olive oil</li>
+          <li>Salt and freshly ground black pepper, to taste</li>
+          <li>2 tablespoons Dijon mustard</li>
+        </ul>
+      </div>
+      
+      <div class="ingredients-list">
+        <strong>For the Duxelles:</strong>
+        <ul>
+          <li>1 lb mixed mushrooms, finely chopped</li>
+          <li>2 shallots, finely diced</li>
+          <li>3 cloves garlic, minced</li>
+          <li>2 tablespoons butter</li>
+          <li>2 tablespoons fresh thyme leaves</li>
+          <li>¼ cup dry white wine</li>
+        </ul>
+      </div>
+      
+      <div class="ingredients-list">
+        <strong>For Assembly:</strong>
+        <ul>
+          <li>8 slices prosciutto</li>
+          <li>1 lb puff pastry, thawed</li>
+          <li>1 egg, beaten (for egg wash)</li>
+          <li>Flour, for dusting</li>
+        </ul>
+      </div>
+    </div>
     
-    <h3>For the Beef:</h3>
-    <ul>
-        <li>2 lbs beef tenderloin</li>
-        <li>2 tablespoons olive oil</li>
-        <li>Salt and pepper</li>
-    </ul>
+    <div class="divider"></div>
     
-    <h3>For the Mushroom Mixture:</h3>
-    <ul>
-        <li>1 lb mushrooms, finely chopped</li>
-        <li>2 shallots, minced</li>
-        <li>2 cloves garlic, minced</li>
-        <li>2 tablespoons butter</li>
-        <li>Fresh thyme</li>
-    </ul>
-    
-    <h3>For Assembly:</h3>
-    <ul>
-        <li>6-8 slices prosciutto</li>
-        <li>2 tablespoons Dijon mustard</li>
-        <li>1 sheet puff pastry</li>
-        <li>1 egg, beaten</li>
-    </ul>
-    
-    <h2>Instructions</h2>
-    <ol>
-        <li>Season beef with salt and pepper. Sear in hot oil until browned on all sides. Brush with mustard and let cool.</li>
-        <li>Cook shallots and garlic in butter. Add mushrooms and cook until all liquid evaporates. Let cool.</li>
-        <li>Lay out prosciutto slices. Spread mushroom mixture on top. Place beef in center and roll tightly. Refrigerate 15 minutes.</li>
-        <li>Roll out puff pastry. Wrap around beef and seal with egg wash.</li>
-        <li>Brush with egg wash. Bake at 425°F for 25-30 minutes until golden brown.</li>
-        <li>Let rest 10 minutes before slicing.</li>
-    </ol>
-    
-    <h2>Info</h2>
-    <ul>
-        <li>Prep Time: 30 minutes</li>
-        <li>Cook Time: 45 minutes</li>
-        <li>Servings: 4-6</li>
-    </ul>
-    
+    <div class="image-container">
+      <img src="beef-wellington.jpg" alt="Beef Wellington" width="600" height="400">
+    </div>
+  </div>
 </body>
 </html>
