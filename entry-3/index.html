@@ -3,229 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entree Beef Wellington</title>
+    <title>Beef Wellington Recipe</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f5f0;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 800px;
         }
-
-        header {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><rect fill="%238B4513" width="1200" height="400"/></svg>');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
         h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            font-weight: normal;
-            letter-spacing: 2px;
+            color: #333;
         }
-
-        .subtitle {
-            font-size: 1.3em;
-            font-style: italic;
-            color: #f0e6d2;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .intro {
-            background: white;
-            padding: 40px;
-            margin-bottom: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .intro p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #555;
-        }
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
         h2 {
-            color: #8B4513;
-            margin-bottom: 20px;
-            font-size: 2em;
-            border-bottom: 3px solid #d4a574;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            color: #6d3410;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.3em;
-        }
-
-        ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-            color: #555;
-        }
-
-        .full-width {
-            grid-column: 1 / -1;
-        }
-
-        .instructions ol {
-            margin-left: 20px;
-            counter-reset: step-counter;
-            list-style: none;
-        }
-
-        .instructions ol li {
-            counter-increment: step-counter;
-            margin-bottom: 20px;
-            padding-left: 40px;
-            position: relative;
-        }
-
-        .instructions ol li::before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: #8B4513;
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        .tips {
-            background: #fff9e6;
-            border-left: 4px solid #d4a574;
-            padding: 20px;
+            color: #666;
             margin-top: 30px;
         }
-
-        .tips h3 {
-            color: #8B4513;
-        }
-
-        footer {
-            background: #3d2817;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 768px) {
-            .content-grid {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                font-size: 2.5em;
-            }
-
-            header {
-                padding: 60px 20px;
-            }
+        ul, ol {
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Beef Wellington</h1>
-    </header>
-
-    <div class="container">
-        <div class="intro">
-          <img src="16899-beef-wellington-DDMFS-4x3-84b7691972174478bfb16b465cdaf0d2.webp"
- <img src="16899-beef-wellington-DDMFS-4x3-84b7691972174478bfb16b465cdaf0d2.webp" width="70" height="70">
-        </div>
-
-        <div class="content-grid">
-            <div class="card">
-                <h2>Ingredients</h2>
-                
-                <h3>For the Beef:</h3>
-                <ul>
-                    <li>2 lbs beef tenderloin (center cut)</li>
-                    <li>2 tablespoons olive oil</li>
-                    <li>Salt and pepper to taste</li>
-                </ul>
-
-                <h3>For the Duxelles:</h3>
-                <ul>
-                    <li>1 lb mushrooms, finely chopped</li>
-                    <li>2 shallots, minced</li>
-                    <li>2 cloves garlic, minced</li>
-                    <li>2 tablespoons butter</li>
-                    <li>Fresh thyme</li>
-                </ul>
-
-                <h3>For Assembly:</h3>
-                <ul>
-                    <li>6-8 slices prosciutto or Parma ham</li>
-                    <li>2 tablespoons Dijon mustard</li>
-                    <li>1 sheet puff pastry, thawed</li>
-                    <li>1 egg, beaten (for egg wash)</li>
-                </ul>
-            </div>
-
-            <div class="card">
-            <div class="card full-width instructions">
-                <h2>Instructions</h2>
-                <ol>
-                    <li><strong>Sear the Beef:</strong> Season the beef tenderloin generously with salt and pepper. Heat olive oil in a large skillet over high heat. Sear the beef on all sides until browned (about 2 minutes per side). Remove and brush with Dijon mustard. Let cool completely.</li>
-                    
-                    <li><strong>Prepare the Duxelles:</strong> In the same skillet, melt butter over medium heat. Add shallots and garlic, cooking until softened. Add finely chopped mushrooms and thyme. Cook until all liquid has evaporated and the mixture is dry and paste-like (about 15-20 minutes). Season with salt and pepper. Let cool completely.</li>
-                    
-                    <li><strong>Assemble the Wellington:</strong> Lay out a large piece of plastic wrap. Arrange prosciutto slices in an overlapping layer. Spread the mushroom duxelles evenly over the prosciutto. Place the cooled beef in the center and use the plastic wrap to roll everything tightly around the beef. Twist the ends to seal and refrigerate for 15-20 minutes.</li>
-                    
-                    <li><strong>Wrap in Pastry:</strong> Roll out the puff pastry into a rectangle large enough to wrap the beef. Remove the plastic wrap from the beef and place it in the center of the pastry. Fold the pastry over the beef, sealing the edges with egg wash. Trim any excess pastry. Place seam-side down on a baking sheet.</li>
-                    
-                    <li><strong>Bake:</strong> Preheat oven to 425°F (220°C). Brush the entire Wellington with egg wash and score the top decoratively if desired. Bake for 25-30 minutes for medium-rare, or until the pastry is golden brown and the internal temperature reaches 135°F.</li>
-                    
-                    <li><strong>Rest and Serve:</strong> Remove from oven and let rest for 10 minutes before slicing. Use a sharp serrated knife to cut into thick slices. Serve immediately with your favorite sides.</li>
-                </ol>
-            </div>
-        </div>
-    </div>
+    <h1>Beef Wellington</h1>
+    
+    <img src=entry-3/16899-beef-wellington-DDMFS-4x3-84b7691972174478bfb16b465cdaf0d2.webp" 
+    <p>A classic dish featuring beef tenderloin wrapped in mushroom duxelles and puff pastry.</p>
+    
+    <h2>Ingredients</h2>
+    
+    <h3>For the Beef:</h3>
+    <ul>
+        <li>2 lbs beef tenderloin</li>
+        <li>2 tablespoons olive oil</li>
+        <li>Salt and pepper</li>
+    </ul>
+    
+    <h3>For the Mushroom Mixture:</h3>
+    <ul>
+        <li>1 lb mushrooms, finely chopped</li>
+        <li>2 shallots, minced</li>
+        <li>2 cloves garlic, minced</li>
+        <li>2 tablespoons butter</li>
+        <li>Fresh thyme</li>
+    </ul>
+    
+    <h3>For Assembly:</h3>
+    <ul>
+        <li>6-8 slices prosciutto</li>
+        <li>2 tablespoons Dijon mustard</li>
+        <li>1 sheet puff pastry</li>
+        <li>1 egg, beaten</li>
+    </ul>
+    
+    <h2>Instructions</h2>
+    <ol>
+        <li>Season beef with salt and pepper. Sear in hot oil until browned on all sides. Brush with mustard and let cool.</li>
+        <li>Cook shallots and garlic in butter. Add mushrooms and cook until all liquid evaporates. Let cool.</li>
+        <li>Lay out prosciutto slices. Spread mushroom mixture on top. Place beef in center and roll tightly. Refrigerate 15 minutes.</li>
+        <li>Roll out puff pastry. Wrap around beef and seal with egg wash.</li>
+        <li>Brush with egg wash. Bake at 425°F for 25-30 minutes until golden brown.</li>
+        <li>Let rest 10 minutes before slicing.</li>
+    </ol>
+    
+    <h2>Info</h2>
+    <ul>
+        <li>Prep Time: 30 minutes</li>
+        <li>Cook Time: 45 minutes</li>
+        <li>Servings: 4-6</li>
+    </ul>
+    
 </body>
 </html>
