@@ -3,195 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full Course Meal - Entree</title>
+  <title>Page Title - Entry 3</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Lato', sans-serif;
-      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-      color: #f5f5f5;
-      line-height: 1.6;
-      padding: 40px 20px;
-      min-height: 100vh;
-    }
-    
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      padding: 50px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5em;
-      text-align: center;
-      color: #d4af37;
-      margin-bottom: 15px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-    
-    .course-label {
-      text-align: center;
-      font-size: 0.9em;
-      color: #c9a961;
-      letter-spacing: 2px;
-      margin-bottom: 40px;
-      text-transform: uppercase;
-    }
-    
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2em;
-      color: #d4af37;
-      margin: 40px 0 20px 0;
-      border-bottom: 2px solid rgba(212, 175, 55, 0.3);
-      padding-bottom: 10px;
-    }
-    
-    .dish-intro {
-      font-size: 1.1em;
-      font-style: italic;
-      color: #e0e0e0;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    
-    .recipe-section {
-      margin: 30px 0;
-    }
-    
-    h3 {
-      font-family: 'Playfair Display', serif;
-      color: #c9a961;
-      font-size: 1.4em;
-      margin: 25px 0 15px 0;
-    }
-    
-    .ingredients-list {
-      background: rgba(255, 255, 255, 0.03);
-      padding: 25px;
-      border-radius: 12px;
-      border-left: 4px solid #d4af37;
-      margin: 20px 0;
-    }
-    
-    .ingredients-list ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    
-    .ingredients-list li {
-      padding: 8px 0;
-      padding-left: 25px;
-      position: relative;
-      color: #e0e0e0;
-    }
-    
-    .ingredients-list li:before {
-      content: "▸";
-      position: absolute;
-      left: 0;
-      color: #d4af37;
-      font-weight: bold;
-    }
-    
-    .image-container {
-      text-align: center;
-      margin: 40px 0;
-    }
-    
-    .image-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 15px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-      border: 3px solid rgba(212, 175, 55, 0.3);
-    }
-    
-    .divider {
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.5), transparent);
-      margin: 50px 0;
-    }
-    
-    @media (max-width: 768px) {
-      .container {
-        padding: 30px 20px;
-      }
-      
-      h1 {
-        font-size: 2em;
-      }
-      
-      h2 {
-        font-size: 1.6em;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Full Course Meal</h1>
-    <p class="course-label">Main Course - Entree</p>
-    
-    <h2>Beef Wellington</h2>
-    <p class="dish-intro">A classic British dish featuring tender beef tenderloin wrapped in mushroom duxelles and golden puff pastry</p>
-    
-    <div class="recipe-section">
-      <h3>Ingredients</h3>
-      
-      <div class="ingredients-list">
-        <strong>For the Beef:</strong>
-        <ul>
-          <li>2 lb beef tenderloin, center cut</li>
-          <li>2 tablespoons olive oil</li>
-          <li>Salt and freshly ground black pepper, to taste</li>
-          <li>2 tablespoons Dijon mustard</li>
-        </ul>
-      </div>
-      
-      <div class="ingredients-list">
-        <strong>For the Duxelles:</strong>
-        <ul>
-          <li>1 lb mixed mushrooms, finely chopped</li>
-          <li>2 shallots, finely diced</li>
-          <li>3 cloves garlic, minced</li>
-          <li>2 tablespoons butter</li>
-          <li>2 tablespoons fresh thyme leaves</li>
-          <li>¼ cup dry white wine</li>
-        </ul>
-      </div>
-      
-      <div class="ingredients-list">
-        <strong>For Assembly:</strong>
-        <ul>
-          <li>8 slices prosciutto</li>
-          <li>1 lb puff pastry, thawed</li>
-          <li>1 egg, beaten (for egg wash)</li>
-          <li>Flour, for dusting</li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="divider"></div>
-    
-    <div class="image-container">
-      <img src="beef-wellington.jpg" alt="Beef Wellington" width="600" height="400">
-    </div>
-  </div>
 </body>
 </html>
+   <h2>FULL COURSE MEAL</h2>
+     <p>Entree. Beef Welington</p>
+ 
+ <div
+2 ½ pounds beef tenderloin
+
+4 tablespoons butter, softened, divided
+
+2 tablespoons butter
+
+1 onion, chopped
+
+½ cup sliced fresh mushrooms
+
+2 ounces liver paté
+
+salt and pepper to taste
+
+1 (17.5 ounce) package frozen puff pastry, thawed
+
+1 large egg yolk, beaten
+
+1 (10.5 ounce) can beef broth
+
+2 tablespoons red winee>
+</div>
+ <p>
+
+step 1. Preheat the oven to 425 degrees F (220 degrees C).
+step 2. Place beef tenderloin in a baking dish. Spread 2 tablespoons softened butter over beef.
+step 3. Bake in the preheated oven until browned, 10 to 15 minutes. Remove beef from the pan and reserve pan juices; allow beef to cool completely.
+step 4. Increase oven temperature to 450 degrees F (230 degrees C).
+step 5. Melt 2 tablespoons butter in a skillet over medium heat. Sauté onion and mushrooms in butter for 5 minutes. Remove from heat and let cool.
+step 6. Mix paté and remaining 2 tablespoons softened butter together in a bowl; season with salt and pepper. Spread paté mixture over beef. Top with onion and mushroom mixture.
+step 7.Roll out puff pastry dough to about 1/4-inch thickness and place beef in the center.
+step 8.Fold up and seal all the edges, making sure the seams are not too thick. Place beef in a 9x13-inch baking dish, cut a few slits in the top of dough, and brush with egg yolk.
+step 9.Bake in the preheated oven for 10 minutes. Reduce heat to 425 degrees F (220 degrees C) and continue baking until pastry is a rich, golden brown, 10 to 15 minutes. An instant-read thermometer inserted into the center should read between 122 to 130 degrees F (50 to 54 degrees C) for medium rare. Set aside to rest.
+step 10.Meanwhile, place reserved pan juices in a small saucepan over high heat. Stir in beef broth and red wine; boil until slightly reduced, about 5 minutes. Strain and serve with beef.
+</p>
+   </body>
+</html>
+<img src="entry-3/16899-beef-wellington-DDMFS-4x3-84b7691972174478bfb16b465cdaf0d2.png"
+ <img src="entry-3/16899-beef-wellington-DDMFS-4x3-84b7691972174478bfb16b465cdaf0d2.png" width="70" height="70">
+   </div>
