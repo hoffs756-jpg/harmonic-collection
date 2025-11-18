@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%);
+    color: #2c2c2c;
+    line-height: 1.8;
+}
+
+h1 {
+    color: #d97706;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #d97706;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2::before {
+    content: '';
+    width: 4px;
+    height: 28px;
+    background: linear-gradient(180deg, #f59e0b, #d97706);
+    border-radius: 2px;
+}
+
+ul, ol {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.06);
+    margin: 20px 0;
+}
+
+li {
+    margin: 14px 0;
+    padding-left: 10px;
+    font-size: 1.05em;
+    transition: transform 0.2s ease;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+ul li::before {
+    content: '●';
+    color: #f59e0b;
+    font-size: 1.2em;
+    position: absolute;
+    left: -20px;
+}
+
+ol {
+    counter-reset: step-counter;
+    list-style: none;
+}
+
+ol li {
+    counter-increment: step-counter;
+    position: relative;
+    padding-left: 40px;
+}
+
+ol li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9em;
+    box-shadow: 0 2px 4px rgba(217, 119, 6, 0.3);
+}
+
+ol li:hover, ul li:hover {
+    transform: translateX(5px);
+}
+
+.subtitle {
+    color: #92400e;
+    font-style: italic;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    margin: 30px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    ul, ol {
+        padding: 20px 25px;
+    }
+
+    ol li {
+        padding-left: 35px;
+    }
+}
