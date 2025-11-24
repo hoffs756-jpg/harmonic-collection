@@ -13,38 +13,33 @@
 
     body {
       font-family: 'Georgia', serif;
-      background-color: #e5e4e1;     
-      color: #2f2f31;                 
+      background-color: #e5e4e1;
+      color: #2f2f31;   /* universal dark text color */
       line-height: 1.6;
     }
 
     .header {
-      background: #fedfe1;            
+      background: #fedfe1;
       padding: 2rem;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .header h1 {
-      font-size: 2.5rem;
       color: #2f2f31;
-      margin-bottom: 0.5rem;
     }
 
+    .header h1,
     .header p {
-      font-size: 1.1rem;
       color: #2f2f31;
-      font-style: italic;
     }
 
     .container {
       max-width: 1200px;
       margin: 2rem auto;
       padding: 0 1rem;
+      color: #2f2f31;
     }
 
     .food-card {
-      background: #ffffff;            
+      background: #ffffff;
       border-radius: 15px;
       padding: 2rem;
       margin-bottom: 2rem;
@@ -61,16 +56,16 @@
       font-size: 1.8rem;
       color: #2f2f31;
       margin-bottom: 1rem;
-      border-bottom: 3px solid #d7c4a3; 
+      border-bottom: 3px solid #d7c4a3;
       padding-bottom: 0.5rem;
     }
 
     .location {
-      background-color: #fedfe1;      
-      color: #2f2f31;
+      background-color: #fedfe1;
       padding: 1.5rem;
       border-radius: 10px;
       margin-bottom: 1.5rem;
+      color: #2f2f31;
     }
 
     .location h3 {
@@ -84,6 +79,7 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
       margin-top: 1rem;
+      color: #2f2f31;
     }
 
     .detail-item {
@@ -94,13 +90,13 @@
     }
 
     .description {
-      color: #2f2f31;
       margin-bottom: 1rem;
       font-size: 1.05rem;
+      color: #2f2f31;
     }
 
     .alternative {
-      background: #a89f91;            
+      background: #a89f91;
       padding: 1rem;
       border-left: 4px solid #d7c4a3;
       margin-top: 1rem;
@@ -112,17 +108,16 @@
       .header h1 {
         font-size: 2rem;
       }
-
       .food-card {
         padding: 1.5rem;
       }
-
       .location-details {
         grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="header">
     <h1>Your NYC Culinary Adventure</h1>
@@ -141,7 +136,7 @@
           <div class="detail-item">Flatiron District</div>
           <div class="detail-item">5 Madison Avenue</div>
         </div>
-        <p style="margin-top: 1rem;">Famous for their perfectly executed Beef Wellington with rich flavors and tender meat.</p>
+        <p style="margin-top: 1rem; color:#2f2f31;">Famous for their perfectly executed Beef Wellington with rich flavors and tender meat.</p>
       </div>
 
       <div class="location">
@@ -150,11 +145,11 @@
           <div class="detail-item">West Village</div>
           <div class="detail-item">Scottish gastropub</div>
         </div>
-        <p style="margin-top: 1rem;">Affordable Beef Wellington served with crispy pastry, mushroom jus, and excellent sides.</p>
+        <p style="margin-top: 1rem; color:#2f2f31;">Affordable Beef Wellington served with crispy pastry, mushroom jus, and excellent sides.</p>
       </div>
 
       <div class="alternative">
-        <strong>Also try:</strong> Harry's Bar & Restaurant (Financial District), Soogil (East Village - fusion approach), One If By Land Two If By Sea (West Village - romantic setting)
+        <strong>Also try:</strong> Harry's Bar & Restaurant, Soogil, One If By Land Two If By Sea
       </div>
     </div>
 
@@ -169,14 +164,13 @@
           <div class="detail-item">Multiple NYC locations</div>
           <div class="detail-item">Upscale steakhouse</div>
         </div>
-        <p style="margin-top: 1rem;">Features bruschetta appetizers alongside their premium steak selections.</p>
+        <p style="margin-top: 1rem; color:#2f2f31;">Features bruschetta appetizers alongside their premium steak selections.</p>
       </div>
 
       <div class="alternative">
-        <strong>Similar options:</strong> Many Italian restaurants in NYC serve variations with steak, including Carmine's (Times Square), Gelso & Grand (Little Italy), and La Lanterna Di Vittorio (West Village) for traditional bruschetta.
+        <strong>Similar options:</strong> Carmine's, Gelso & Grand, La Lanterna Di Vittorio
       </div>
     </div>
-
 
   </div>
 
