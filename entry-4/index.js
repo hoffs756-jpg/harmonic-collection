@@ -1,19 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Fade-in button immediately
+
+    // Fade in the button
     const button = document.querySelector('.cute-btn');
-    if (button) {
+    if(button){
         setTimeout(() => {
             button.style.opacity = '1';
-        }, 500);
+        }, 400); // slight delay for staggered effect
     }
 
     // Animate image
     const image = document.querySelector('.recipe-img');
-    if (image) {
+    if(image){
         setTimeout(() => {
             image.style.opacity = '1';
             image.style.transform = 'scale(1)';
-        }, 400);
+        }, 300);
     }
 
     // Animate ingredient and instruction lists
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             list.style.opacity = '1';
             list.style.transform = 'scale(1)';
-        }, 300 + i * 150);
+        }, 200 + i * 150);
     });
 });
 
