@@ -88,8 +88,8 @@ h2 {
     text-decoration: none;
     font-size: 1.1rem;
     text-align: center;
-    opacity: 0; /* start hidden */
-    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.8s ease;
+    opacity: 1; /* make visible immediately */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .cute-btn:hover {

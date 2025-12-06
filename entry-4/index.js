@@ -1,13 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Fade in the button
-    const button = document.querySelector('.cute-btn');
-    if(button){
-        setTimeout(() => {
-            button.style.opacity = '1';
-        }, 400); // slight delay for staggered effect
-    }
-
     // Animate image
     const image = document.querySelector('.recipe-img');
     if(image){
@@ -25,5 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
             list.style.transform = 'scale(1)';
         }, 200 + i * 150);
     });
+
+    // Button is already visible (opacity: 1), optional fade-in can be added:
+    const button = document.querySelector('.cute-btn');
+    if(button){
+        setTimeout(() => {
+            button.style.opacity = '1';
+        }, 500);
+    }
 });
 
