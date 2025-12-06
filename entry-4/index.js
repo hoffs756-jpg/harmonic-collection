@@ -1,29 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Animate image
-    const image = document.querySelector('.recipe-img');
-    if(image){
+    // Animate all elements with class .fade
+    const fadeElements = document.querySelectorAll('.fade');
+    fadeElements.forEach((el, i) => {
         setTimeout(() => {
-            image.style.opacity = '1';
-            image.style.transform = 'scale(1)';
-        }, 300);
-    }
-
-    // Animate ingredient and instruction lists
-    const lists = document.querySelectorAll('.list');
-    lists.forEach((list, i) => {
-        setTimeout(() => {
-            list.style.opacity = '1';
-            list.style.transform = 'scale(1)';
+            el.style.opacity = '1';
+            el.style.transform = 'scale(1)';
         }, 200 + i * 150);
     });
 
-    // Button is already visible (opacity: 1), optional fade-in can be added:
-    const button = document.querySelector('.cute-btn');
-    if(button){
-        setTimeout(() => {
-            button.style.opacity = '1';
-        }, 500);
-    }
+    // Button is already visible with opacity: 1
 });
-
