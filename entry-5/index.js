@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 200 + i * 150);
     });
 
-    // Button fade-in separately, outside container
+    // Button fade-in separately, guaranteed visible
     const button = document.querySelector('.cute-btn');
     if(button){
         setTimeout(() => {
             button.style.opacity = '1';
-        }, 1200); // appears after the content
+        }, 1300); // appears after main content
     }
 });
