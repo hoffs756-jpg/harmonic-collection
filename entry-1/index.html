@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Appetizer. Steak & Blue Cheese Bruschetta with Onion & Roasted Tomato Jam</title>
+
    <style>
        body {
            font-family: Georgia, serif;
@@ -14,92 +15,131 @@
            color: #333;
            line-height: 1.6;
        }
-      
+
+       /* HEADINGS */
        h1 {
            color: #253551;
            border-bottom: 3px solid #22262a;
            padding-bottom: 10px;
+           animation: fadeIn 1s ease-out;
        }
-      
+
        h2 {
            color: #70675c;
            margin-top: 30px;
+           animation: fadeInUp 0.8s ease-out;
        }
-      
-       ul {
-           background-color: white;
-           padding: 20px 40px;
-           border-radius: 8px;
-           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-       }
-      
-       li {
-           margin: 10px 0;
-       }
-      
-       ol {
-           background-color: white;
-           padding: 20px 40px;
-           border-radius: 8px;
-           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-       }
-      
-       ol li {
-           margin: 15px 0;
-           padding-left: 10px;
-       }
-      
+
        .subtitle {
            color: #0b3236;
            font-style: italic;
            font-size: 1.2em;
            margin-top: -10px;
+           animation: fadeIn 1.2s ease-out;
        }
 
+       /* LISTS */
+       ul, ol {
+           background-color: white;
+           padding: 20px 40px;
+           border-radius: 10px;
+           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+       }
 
+       li {
+           margin: 10px 0;
+       }
+
+       /* IMAGE */
        img {
            width: 100%;
-           height: 50%;
+           height: auto;
+           border-radius: 12px;
+           margin: 20px 0;
+           animation: popIn 0.7s ease-out;
+       }
+
+       /* CUTE BUTTON */
+       .cute-btn {
+           display: inline-block;
+           background-color: #ffe9f3;
+           color: #333;
+           padding: 12px 25px;
+           border-radius: 15px;
+           border: 2px solid #ffb8d7;
+           text-decoration: none;
+           font-size: 1.1em;
+           transition: transform 0.3s ease, background-color 0.3s ease;
+           margin: 15px 0 30px 0;
+           opacity: 0;
+       }
+
+       .cute-btn:hover {
+           transform: translateY(-5px) scale(1.05);
+           background-color: #ffd0e6;
+       }
+
+       /* ANIMATIONS */
+       @keyframes fadeIn {
+           from { opacity: 0; }
+           to { opacity: 1; }
+       }
+
+       @keyframes fadeInUp {
+           from { opacity: 0; transform: translateY(10px); }
+           to { opacity: 1; transform: translateY(0); }
+       }
+
+       @keyframes popIn {
+           0% { transform: scale(0.9); opacity: 0; }
+           100% { transform: scale(1); opacity: 1; }
        }
    </style>
 </head>
+
 <body>
+
    <h1>Appetizer. Steak & Blue Cheese Bruschetta with Onion & Roasted Tomato Jam</h1>
    <p class="subtitle">Savory and sweet!</p>
-  
+
+   <!-- Cute animated button -->
+   <a href="https://hoffs756-jpg.github.io/harmonic-collection/entry-2/" class="cute-btn">Go to Entry 2 ✿</a>
+
    <h2>Ingredients</h2>
    <ul>
- 	<li>5 tablespoons olive oil, divided</li>
- 	<li>1 large sweet onion, halved and thinly sliced</li>
- 	<li>1 cup grape tomatoes, halved</li>
- 	<li>1/2 teaspoon kosher salt, divided</li>
- 	<li>1/4 teaspoon freshly ground pepper, divided</li>
- 	<li>6 ounces cream cheese, softened</li>
- 	<li>3/4 cup crumbled blue cheese. 3 garlic cloves, minced</li>
- 	<li>16 slices French bread baguette (1/2 inch thick)</li>
- 	<li>2 beef ribeye steaks (3/4 inch thick and 8 ounces each)</li>
- 	<li>1-1/2 teaspoons Montreal steak seasoning</li>
- 	<li>2 tablespoons balsamic vinegar</li>
+      <li>5 tablespoons olive oil, divided</li>
+      <li>1 large sweet onion, halved and thinly sliced</li>
+      <li>1 cup grape tomatoes, halved</li>
+      <li>1/2 teaspoon kosher salt, divided</li>
+      <li>1/4 teaspoon freshly ground pepper, divided</li>
+      <li>6 ounces cream cheese, softened</li>
+      <li>3/4 cup crumbled blue cheese. 3 garlic cloves, minced</li>
+      <li>16 slices French bread baguette (1/2 inch thick)</li>
+      <li>2 beef ribeye steaks (3/4 inch thick and 8 ounces each)</li>
+      <li>1-1/2 teaspoons Montreal steak seasoning</li>
+      <li>2 tablespoons balsamic vinegar</li>
+   </ul>
 
+   <img src="image.png">
 
-
-    
-    </ul>
-
-    <img src="image.png">
-    
    <h2>Instructions</h2>
    <ol>
- 	<li>Preheat oven to 400°. In large skillet, heat 2 tablespoons oil over medium-high heat; saute onion until softened. Reduce heat to medium-low; cook until golden brown, 25-30 minutes, stirring occasionally</li>
- 	<li>Toss tomatoes with 1 tablespoon oil, 1/4 teaspoon salt and 1/8 teaspoon pepper; spread in a 15x10x1-in. pan. Roast until softened, 10-15 minutes. Stir tomatoes into onion, mashing lightly. In small bowl, mix cream cheese, blue cheese, garlic and the remaining salt and pepper.</li>
- 	<li>Brush bread slices with remaining oil; grill, covered, over medium heat until lightly toasted, 1-2 minutes per side. Sprinkle steaks with steak seasoning. Grill, covered, over medium heat until meat reaches desired doneness (for medium-rare, a thermometer should read 135°; medium, 140°; medium-well, 145°), 3-5 minutes per side. Let stand 5 minutes before slicing</li>
- 	<li>To serve, spread toasts with cheese mixture; top with steak and onion mixture. Drizzle with vinegar</li>
+      <li>Preheat oven to 400°. In large skillet, heat 2 tablespoons oil over medium-high heat; sauté onion until softened. Reduce heat to medium-low; cook until golden brown, 25-30 minutes, stirring occasionally.</li>
+      <li>Toss tomatoes with 1 tablespoon oil, 1/4 teaspoon salt and 1/8 teaspoon pepper; spread in a 15x10x1-in. pan. Roast until softened, 10-15 minutes.</li>
+      <li>Brush bread slices with remaining oil; grill until lightly toasted. Season steaks and grill to desired doneness; rest 5 minutes.</li>
+      <li>To serve, spread toasts with cheese mixture; top with steak and onion mixture. Drizzle with vinegar.</li>
+   </ol>
 
+   <script>
+      // Simple fade-in for button
+      document.addEventListener("DOMContentLoaded", () => {
+          const button = document.querySelector(".cute-btn");
+          setTimeout(() => {
+              button.style.transition = "opacity 0.8s ease";
+              button.style.opacity = "1";
+          }, 300);
+      });
+   </script>
 
-
-
-
-
-         </ol>
 </body>
 </html>
