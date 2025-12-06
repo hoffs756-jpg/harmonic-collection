@@ -4,6 +4,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Salad. Sun-Dried Tomato, Spinach and Quinoa Salad</title>
+   <link rel="stylesheet" href="style.css">
+
+
    <style>
        body {
            font-family: Georgia, serif;
@@ -13,81 +16,135 @@
            background-color: #f9fdf7;
            color: #333;
            line-height: 1.6;
+           animation: fadePage 0.8s ease-out;
        }
-      
+
+       /* HEADINGS */
        h1 {
            color: #5e8d5a;
            border-bottom: 3px solid #f68f3c;
            padding-bottom: 10px;
+           animation: fadeIn 1s ease-out;
        }
-      
+
        h2 {
            color: #67725e;
            margin-top: 30px;
+           animation: fadeInUp 0.8s ease-out;
        }
-      
-       ul {
-           background-color: white;
-           padding: 20px 40px;
-           border-radius: 8px;
-           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-       }
-      
-       li {
-           margin: 10px 0;
-       }
-      
-       ol {
-           background-color: white;
-           padding: 20px 40px;
-           border-radius: 8px;
-           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-       }
-      
-       ol li {
-           margin: 15px 0;
-           padding-left: 10px;
-       }
-      
+
        .subtitle {
            color: #0b3236;
            font-style: italic;
            font-size: 1.2em;
            margin-top: -10px;
+           animation: fadeIn 1.2s ease-out;
        }
 
+       /* LIST STYLING */
+       ul, ol {
+           background-color: white;
+           padding: 20px 40px;
+           border-radius: 10px;
+           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+           animation: popIn 0.7s ease-out;
+       }
 
+       li {
+           margin: 10px 0;
+       }
+
+       /* IMAGE */
        img {
            width: 100%;
-           height: 50%;
+           height: auto;
+           border-radius: 12px;
+           margin: 20px 0;
+           animation: popIn 0.7s ease-out;
+       }
+
+       /* CUTE BUTTON */
+       .cute-btn {
+           display: inline-block;
+           background-color: #ffe9f3;
+           color: #333;
+           padding: 12px 25px;
+           border-radius: 15px;
+           border: 2px solid #ffb8d7;
+           text-decoration: none;
+           font-size: 1.1em;
+           transition: transform 0.3s ease, background-color 0.3s ease;
+           margin: 15px 0 30px 0;
+           opacity: 0;
+       }
+
+       .cute-btn:hover {
+           transform: translateY(-5px) scale(1.05);
+           background-color: #ffd0e6;
+       }
+
+       /* ANIMATIONS */
+       @keyframes fadeIn {
+           from { opacity: 0; }
+           to { opacity: 1; }
+       }
+
+       @keyframes fadeInUp {
+           from { opacity: 0; transform: translateY(10px); }
+           to { opacity: 1; transform: translateY(0); }
+       }
+
+       @keyframes popIn {
+           0% { transform: scale(0.9); opacity: 0; }
+           100% { transform: scale(1); opacity: 1; }
+       }
+
+       @keyframes fadePage {
+           from { opacity: 0; }
+           to { opacity: 1; }
        }
    </style>
+   <script src="script.js"></script>
 </head>
+
 <body>
+
    <h1>Salad. Sun-Dried Tomato, Spinach and Quinoa Salad</h1>
    <p class="subtitle">Refreshing and light!</p>
-  
+
+   <!-- Cute animated button -->
+   <a href="https://hoffs756-jpg.github.io/harmonic-collection/entry-3/" class="cute-btn">Go to Entry 3 ✿</a>
+
    <h2>Ingredients</h2>
    <ul>
- 	<li>1 cup quinoa, rinsed in a fine-mesh colander</li>
+       <li>1 cup quinoa, rinsed in a fine-mesh colander</li>
        <li>⅓ cup oil-packed sun-dried tomatoes, drained and chopped</li>
        <li>2 cups roughly chopped fresh spinach or arugula</li>
-       <li>⅓ cup sliced almonds, ¼ teaspoon olive oil, Salt to taste</li>
-       <li>Lemon dressing. 2 tablespoons olive oil. 2 tablespoons lemon juice<li>
-       <li>2 cloves garlic, pressed or minced. 1 teaspoon Dijon mustard. ½ teaspoon salt. Pinch of red pepper flakes. Freshly ground black pepper, to taste. </li>
+       <li>⅓ cup sliced almonds, ¼ teaspoon olive oil, salt to taste</li>
+       <li>Lemon dressing: 2 tablespoons olive oil, 2 tablespoons lemon juice</li>
+       <li>2 cloves garlic, minced; 1 teaspoon Dijon mustard; ½ teaspoon salt; pinch of red pepper flakes; black pepper to taste</li>
    </ul>
 
-    <img src="image.png">
-  
+   <img src="image.png">
+
    <h2>Instructions</h2>
    <ol>
-       <li>Combine the rinsed quinoa and 2 cups of water in a medium saucepan. Bring the mixture to a boil over medium-high heat, then decrease the heat to maintain a gentle simmer. Cook until the quinoa has absorbed all of the water, about 15 minutes, reducing heat as time goes on to maintain a gentle simmer. Remove from heat, cover, and let the quinoa rest for 5 minutes, which gives it time to fluff up.</li>
-       <li>Meanwhile, to prepare the dressing: Whisk together the olive oil, lemon juice, garlic, mustard, salt and red pepper flakes. Season to taste with freshly ground black pepper.</li>
-       <li>To toast the almonds: Warm ¼ teaspoon olive oil in a small skillet over medium heat until shimmering. Add the almonds and a dash of salt and cook, stirring frequently (beware, these burn quickly!), until they are golden and fragrant. Transfer the toasted almonds to a medium-sized serving bowl to cool.</li>
-       <li>Once the quinoa is done cooking, fluff it with a fork and then transfer it into your serving bowl. Drizzle all of the dressing on top and toss to combine. Add the chopped sun-dried tomatoes and wait a few more minutes to add the spinach so it doesn’t wilt completely. Toss again, season to taste with additional salt and pepper, if necessary, and serve immediately.</li>
+       <li>Combine quinoa and 2 cups water in a saucepan. Bring to a boil, then reduce heat and simmer until water is absorbed, about 15 minutes. Remove from heat, cover, and let rest 5 minutes.</li>
+       <li>Prepare dressing: whisk olive oil, lemon juice, garlic, mustard, salt, and red pepper flakes. Add black pepper to taste.</li>
+       <li>Toast the almonds: heat ¼ teaspoon olive oil in a skillet over medium heat. Add almonds and a pinch of salt; cook, stirring often, until golden and fragrant. Transfer to a bowl to cool.</li>
+       <li>Fluff quinoa with a fork and transfer to bowl. Add dressing and toss. Add sun-dried tomatoes. Wait a few minutes before adding spinach so it doesn't wilt completely. Toss again and season to taste.</li>
+   </ol>
 
+   <script>
+      // fade-in animation for button
+      document.addEventListener("DOMContentLoaded", () => {
+          const button = document.querySelector(".cute-btn");
+          setTimeout(() => {
+              button.style.transition = "opacity 0.8s ease";
+              button.style.opacity = "1";
+          }, 300);
+      });
+   </script>
 
-
-         </ol>
 </body>
 </html>
