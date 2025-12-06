@@ -13,17 +13,35 @@
             background-color: #f9fdf7;
             color: #333;
             line-height: 1.6;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         
         h1 {
             color: #4f567c;
             border-bottom: 3px solid #c3bbe5;
             padding-bottom: 10px;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         h2 {
             color: #6e85f4;
             margin-top: 30px;
+            animation: slideInLeft 0.6s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
         }
         
         ul {
@@ -31,10 +49,22 @@
             padding: 20px 40px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         li {
             margin: 10px 0;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+            color: #4f567c;
         }
         
         ol {
@@ -42,6 +72,7 @@
             padding: 20px 40px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out;
         }
         
         ol li {
@@ -54,17 +85,53 @@
             font-style: italic;
             font-size: 1.2em;
             margin-top: -10px;
+            animation: fadeIn 1s ease-in 0.3s both;
         }
 
         img {
             width: 100%;
             height: auto;
+            animation: fadeIn 0.8s ease-in 0.4s both;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #c3bbe5;
+            color: #4f567c;
+            text-decoration: none;
+            border: 2px solid #4f567c;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            animation: fadeIn 1s ease-in 0.5s both;
+        }
+
+        .nav-button:hover {
+            background-color: #4f567c;
+            color: #c3bbe5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 86, 124, 0.3);
+        }
+
+        .nav-button:active {
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
     <h1>Desert Blueberry Heaven on Earth Cake</h1>
     <p class="subtitle">This blueberry heaven on earth cake truly lives up to its name!</p>
+    
+    <a href="https://hoffs756-jpg.github.io/harmonic-collection/entry-8/" class="nav-button">Go to Entry 8 ✿</a>
     
     <h2>Ingredients</h2>
     <ul>
@@ -88,9 +155,6 @@
   <li>600 g (21 ounce) Blueberry pie filling</li>
   <li>Sponge layer</li>
   <li>400 g (14 ounce) Angel food cake</li>
-
-
-
     </ul>
 
     <img src="image.png">
@@ -105,7 +169,6 @@
 
   <li>Chantilly whipped cream layer. Using an electric hand mixer, whip the very cold heavy cream, mascarpone, and sifted powdered sugar for about a minute, then add the vanilla extract.</li>
   <li>Continue whipping for 2 to 3 minutes, or until the cream reaches a fluffy, pipeable consistency (after soft peaks but before stiff peaks). Be sure to stop whipping right away to avoid over-beating. If you continue, the chantilly cream will separate and become runny.</li>
-
 
   <li>Blueberry layer. Open a tin of blueberry pie filling can or prepare it from scratch.</li>
    <li>Cut the Angel food cake or sponge cake into small, 2 cm / 1 inch cubes.</li>
