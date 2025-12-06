@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Animate all fade elements
     const fadeElements = document.querySelectorAll('.fade');
     fadeElements.forEach((el, i) => {
         setTimeout(() => {
@@ -8,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 200 + i * 150);
     });
 
-    // Animate the button separately
+    // Button fade-in separately, outside container
     const button = document.querySelector('.cute-btn');
-    if (button) {
+    if(button){
         setTimeout(() => {
             button.style.opacity = '1';
-        }, 1200); // appears after the text
+        }, 1200); // appears after the content
     }
 });
