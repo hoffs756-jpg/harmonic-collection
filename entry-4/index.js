@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Fade-in button
+    // Fade-in button immediately
     const button = document.querySelector('.cute-btn');
     if (button) {
         setTimeout(() => {
@@ -25,3 +25,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 300 + i * 150);
     });
 });
+
