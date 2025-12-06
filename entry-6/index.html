@@ -13,17 +13,35 @@
             background-color: #f9fdf7;
             color: #333;
             line-height: 1.6;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         
         h1 {
             color: #6c0e00;
             border-bottom: 3px solid #f7b23b;
             padding-bottom: 10px;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         h2 {
             color: #391513;
             margin-top: 30px;
+            animation: slideInLeft 0.6s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
         }
         
         ul {
@@ -31,10 +49,22 @@
             padding: 20px 40px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         li {
             margin: 10px 0;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+            color: #6c0e00;
         }
         
         ol {
@@ -42,6 +72,7 @@
             padding: 20px 40px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out;
         }
         
         ol li {
@@ -54,17 +85,53 @@
             font-style: italic;
             font-size: 1.2em;
             margin-top: -10px;
+            animation: fadeIn 1s ease-in 0.3s both;
         }
 
         img {
             width: 100%;
             height: auto;
+            animation: fadeIn 0.8s ease-in 0.4s both;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #f7b23b;
+            color: #6c0e00;
+            text-decoration: none;
+            border: 2px solid #6c0e00;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            animation: fadeIn 1s ease-in 0.5s both;
+        }
+
+        .nav-button:hover {
+            background-color: #6c0e00;
+            color: #f7b23b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(108, 14, 0, 0.3);
+        }
+
+        .nav-button:active {
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
     <h1>Cheese Course</h1>
     <p class="subtitle">Charcuterie Boards are such a fun and beautiful way to enjoy a delicious snack or appetizer!</p>
+    
+    <a href="#" class="nav-button">Go to Entry 3 ✿</a>
     
     <h2>Ingredients</h2>
     <ul>
@@ -77,9 +144,6 @@
         <li>Cold cut veggies, fresh fruit and berries</li>
         <li>Dried fruit, sweet spreads, dark chocolate</li>
         <li>Crackers ex pita, whole grain, croccantini, toasted baguettes</li>
-
-
-
     </ul>
 
     <img src="image.png">
