@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beef Wellington</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div class="container fade">
 
         <h1>Beef Wellington</h1>
         <p class="subtitle">Rich, classic, and comforting.</p>
-
-            <a class="cute-btn" href="https://hoffs756-jpg.github.io/harmonic-collection/entry-4/">
-      Go to Entry 4 ✿
-    </a>
 
         <h2>Ingredients</h2>
         <ul class="list">
@@ -32,7 +27,6 @@
             <li>1 (10.5 oz) can beef broth</li>
             <li>2 tablespoons red wine</li>
         </ul>
-
 
         <img src="image.png" alt="Beef Wellington" class="recipe-img">
 
@@ -50,38 +44,24 @@
             <li>Boil pan juices with broth + wine 5 minutes; strain and serve.</li>
         </ol>
 
-<!-- Cute animated button -->
-<a href="https://hoffs756-jpg.github.io/harmonic-collection/entry-4/" class="cute-btn">
-    Go to Entry 4 ✿
-</a>
+        <!-- Cute button for Entry 4 -->
+        <a href="https://hoffs756-jpg.github.io/harmonic-collection/entry-4/" class="cute-btn">
+            Go to Entry 4 ✿
+        </a>
 
     </div>
 
     <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Entree. Beef Wellington</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <div class="page">
-
-  </div>
-
-  <script>
-    // fade-in the button like on Entry-2
-    document.addEventListener("DOMContentLoaded", () => {
-      const b = document.querySelector('.cute-btn');
-      if (b) setTimeout(() => { b.style.opacity = '1'; b.style.transition = 'opacity .8s ease'; }, 300);
-    });
-  </script>
+    <script>
+        // fade-in the button like on Entry-2
+        document.addEventListener("DOMContentLoaded", () => {
+            const b = document.querySelector('.cute-btn');
+            if (b) setTimeout(() => {
+                b.style.opacity = '1';
+                b.style.transition = 'opacity .8s ease';
+            }, 300);
+        });
+    </script>
 
 </body>
 </html>
