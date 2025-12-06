@@ -11,24 +11,68 @@
       box-sizing: border-box;
     }
 
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     body {
       font-family: 'Georgia', serif;
-      background-color: #e5e4e1;
-      color: #2f2f31;   /* universal dark text color */
+      background-color: #f9fdf7;
+      color: #2f2f31;
       line-height: 1.6;
+      animation: fadeIn 0.8s ease-in;
     }
 
     .header {
-      background: #fedfe1;
+      background: #ff6b9d;
       padding: 2rem;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      color: #2f2f31;
+      color: #fff;
+      animation: slideDown 0.6s ease-out;
     }
 
     .header h1,
     .header p {
-      color: #2f2f31;
+      color: #fff;
+    }
+
+    .nav-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #fff;
+      color: #ff6b9d;
+      text-decoration: none;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      margin: 20px 0;
+      animation: fadeIn 1s ease-in 0.5s both;
+    }
+
+    .nav-button:hover {
+      background-color: #ff4081;
+      color: #fff;
+      border-color: #ff4081;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 107, 157, 0.4);
+    }
+
+    .nav-button:active {
+      transform: translateY(0);
     }
 
     .container {
@@ -44,34 +88,41 @@
       padding: 2rem;
       margin-bottom: 2rem;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       color: #2f2f31;
+      animation: fadeInUp 0.6s ease-out;
     }
 
     .food-card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
 
     .food-title {
       font-size: 1.8rem;
-      color: #2f2f31;
+      color: #ff6b9d;
       margin-bottom: 1rem;
-      border-bottom: 3px solid #d7c4a3;
+      border-bottom: 3px solid #ffb6d9;
       padding-bottom: 0.5rem;
     }
 
     .location {
-      background-color: #fedfe1;
+      background-color: #fff0f5;
       padding: 1.5rem;
       border-radius: 10px;
       margin-bottom: 1.5rem;
       color: #2f2f31;
+      transition: background-color 0.3s ease;
+    }
+
+    .location:hover {
+      background-color: #ffe4f0;
     }
 
     .location h3 {
       font-size: 1.4rem;
       margin-bottom: 0.5rem;
-      color: #2f2f31;
+      color: #ff6b9d;
     }
 
     .location-details {
@@ -87,6 +138,11 @@
       align-items: center;
       gap: 0.5rem;
       color: #2f2f31;
+      transition: transform 0.2s ease;
+    }
+
+    .detail-item:hover {
+      transform: translateX(5px);
     }
 
     .description {
@@ -96,12 +152,17 @@
     }
 
     .alternative {
-      background: #a89f91;
+      background: #ffb6d9;
       padding: 1rem;
-      border-left: 4px solid #d7c4a3;
+      border-left: 4px solid #ff6b9d;
       margin-top: 1rem;
       border-radius: 5px;
       color: #2f2f31;
+      transition: background-color 0.3s ease;
+    }
+
+    .alternative:hover {
+      background: #ffa0cc;
     }
 
     @media (max-width: 768px) {
@@ -122,6 +183,7 @@
   <div class="header">
     <h1>Your NYC Culinary Adventure</h1>
     <p>A curated guide to finding your favorite dishes in the city that never sleeps</p>
+    <a href="https://hoffs756-jpg.github.io/harmonic-collection/entry-10/" class="nav-button">Go to Entry 10 ✿</a>
   </div>
 
   <div class="container">

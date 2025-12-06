@@ -13,17 +13,35 @@
             background-color: #f9fdf7;
             color: #333;
             line-height: 1.6;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         
         h1 {
             color: #ff9248;
             border-bottom: 3px solid #ffd7b5;
             padding-bottom: 10px;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         h2 {
             color: #ff9248;
             margin-top: 30px;
+            animation: slideInLeft 0.6s ease-out;
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
         }
         
         ul {
@@ -31,10 +49,22 @@
             padding: 20px 40px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         li {
             margin: 10px 0;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+            color: #ff9248;
         }
         
         ol {
@@ -42,6 +72,7 @@
             padding: 20px 40px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease-out;
         }
         
         ol li {
@@ -50,21 +81,57 @@
         }
         
         .subtitle {
-            color: #ff9248;;
+            color: #ff9248;
             font-style: italic;
             font-size: 1.2em;
             margin-top: -10px;
+            animation: fadeIn 1s ease-in 0.3s both;
         }
 
         img {
             width: 100%;
             height: auto;
+            animation: fadeIn 0.8s ease-in 0.4s both;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ffd7b5;
+            color: #ff9248;
+            text-decoration: none;
+            border: 2px solid #ff9248;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            animation: fadeIn 1s ease-in 0.5s both;
+        }
+
+        .nav-button:hover {
+            background-color: #ff9248;
+            color: #ffd7b5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 146, 72, 0.3);
+        }
+
+        .nav-button:active {
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
     <h1>Ginger Turmeric Herbal Tea</h1>
     <p class="subtitle">This warming, anti-inflammatory tea blends ginger, turmeric, and cinnamon!</p>
+    
+    <a href="https://hoffs756-jpg.github.io/harmonic-collection/entry-9/" class="nav-button">Go to Entry 9 ✿</a>
     
     <h2>Ingredients</h2>
     <ul>
@@ -74,7 +141,6 @@
   <li>half teaspoon ground cinnamon</li>
   <li>1 tablespoon honey</li>
   <li>1 lemon wedge</li>
-
     </ul>
 
     <img src="image.png">
@@ -86,7 +152,6 @@
   <li>reduce heat to medium low and simmer for 10 minutes</li>
   <li>strain tea into a large glass</li>
   <li>stir in honey and serve with lemon wedge</li>
-
     </ol>
 
     <script src="index.js"></script>
