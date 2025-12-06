@@ -1,96 +1,100 @@
-/* page base */
+/* PAGE BASE */
 body {
-  font-family: Georgia, serif;
-  background-color: #f9fdf7;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    font-family: Georgia, serif;
+    background-color: #f9fdf7;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* center content like entry-2 */
-.page {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  line-height: 1.6;
-  animation: fadePage 0.8s ease-out;
+/* MAIN CONTAINER */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;
 }
 
-/* headers */
+/* HEADINGS */
 h1 {
-  color: #5e8d5a;                /* sage */
-  border-bottom: 3px solid #f68f3c; /* warm orange underline */
-  padding-bottom: 10px;
-  margin-bottom: 16px;
-  font-size: 2.1rem;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    color: #5e8d5a;                  /* sage green */
+    border-bottom: 3px solid #f68f3c;/* warm orange underline */
+    padding-bottom: 10px;
 }
 
 .subtitle {
-  color: #0b3236; /* deep teal */
-  font-style: italic;
-  font-size: 1.1rem;
-  margin-top: -6px;
-  margin-bottom: 18px;
+    font-style: italic;
+    color: #0b3236;                   /* deep teal */
+    margin-top: -4px;
+    margin-bottom: 28px;
+    font-size: 1.1rem;
 }
 
 h2 {
-  color: #67725e; /* muted herb */
-  margin-top: 28px;
-  margin-bottom: 12px;
+    font-size: 1.4rem;
+    color: #67725e;                   /* muted herb */
+    margin-top: 32px;
+    margin-bottom: 12px;
 }
 
-/* white boxed lists like entry-2 */
-.box {
-  background: #fff;
-  padding: 20px 36px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-  margin: 10px 0 24px 0;
+/* LIST BOXES */
+.list {
+    background-color: #fff;
+    padding: 20px 36px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    margin: 12px 0 24px 0;
 }
 
-/* list items spacing */
-.box li {
-  margin: 9px 0;
+.list li {
+    margin: 10px 0;
 }
 
-/* recipe image sizing + centering */
+/* IMAGE */
 .recipe-img {
-  display: block;
-  width: 100%;
-  max-width: 600px;   /* prevents it from becoming too large */
-  height: auto;
-  margin: 22px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-  animation: popIn 0.7s ease-out;
+    display: block;
+    width: 100%;
+    max-width: 600px;                /* prevent oversized image */
+    height: auto;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
 }
 
-/* cute button (entry-2 look) */
+/* CUTE BUTTON */
 .cute-btn {
-  display: inline-block;
-  background-color: #ffe9f3;
-  color: #333;
-  padding: 12px 24px;
-  border-radius: 15px;
-  border: 2px solid #ffb8d7;
-  text-decoration: none;
-  font-size: 1.05rem;
-  margin-top: 18px;
-  opacity: 0; /* will fade in via script */
-  transition: transform 0.25s ease, background-color 0.25s ease;
+    display: inline-block;
+    background-color: #ffe9f3;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 15px;
+    border: 2px solid #ffb8d7;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    opacity: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .cute-btn:hover {
-  transform: translateY(-5px) scale(1.03);
-  background-color: #ffd0e6;
+    transform: translateY(-5px) scale(1.05);
+    background-color: #ffd0e6;
 }
 
-/* animations */
-@keyframes popIn {
-  from { opacity: 0; transform: scale(.98); }
-  to   { opacity: 1; transform: scale(1); }
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-@keyframes fadePage {
-  from { opacity: 0; }
-  to { opacity: 1; }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
 }
