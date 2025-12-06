@@ -4,70 +4,19 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Entree. Beef Wellington</title>
-   <style>
-       body {
-           font-family: Georgia, serif;
-           max-width: 800px;
-           margin: 40px auto;
-           padding: 20px;
-           background-color: #f9fdf7;
-           color: #333;
-           line-height: 1.6;
-       }
-      
-       h1 {
-           color: #72383D;
-           border-bottom: 3px solid #AC9C8D;
-           padding-bottom: 10px;
-       }
-      
-       h2 {
-           color: #0b3236;
-           margin-top: 30px;
-       }
-      
-       ul {
-           background-color: white;
-           padding: 20px 40px;
-           border-radius: 8px;
-           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-       }
-      
-       li {
-           margin: 10px 0;
-       }
-      
-       ol {
-           background-color: white;
-           padding: 20px 40px;
-           border-radius: 8px;
-           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-       }
-      
-       ol li {
-           margin: 15px 0;
-           padding-left: 10px;
-       }
-      
-       .subtitle {
-           color: #0b3236;
-           font-style: italic;
-           font-size: 1.2em;
-           margin-top: -10px;
-       }
 
-
-       img {
-           width: 100%;
-           height: 50%;
-       }
-   </style>
+   <!-- Link your external stylesheet -->
+   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-   <h1>Entree. Beef Wellington</h1>
-  
-   <h2>Ingredients</h2>
-   <ul>
+
+   <h1 class="fade">Entree. Beef Wellington</h1>
+      <a href="https://hoffs756-jpg.github.io/harmonic-collection/entry-4/" class="cute-btn">Go to Entry 4 ✿</a>
+
+
+   <h2 class="fade">Ingredients</h2>
+   <ul class="fade">
        <li>2 ½ pounds beef tenderloin</li>
        <li>4 tablespoons butter, softened, divided</li>
        <li>2 tablespoons butter</li>
@@ -79,33 +28,37 @@
        <li>1 large egg yolk, beaten</li>
        <li>1 (10.5 ounce) can beef broth</li>
        <li>2 tablespoons red wine</li>
-
-
-
-
-
-
    </ul>
 
+   <img src="image.png" alt="Beef Wellington" class="fade">
 
-   <img src="image.png">
-  
-   <h2>Instructions</h2>
-   <ol>
-       <li>step 1. Preheat the oven to 425 degrees F (220 degrees C).</li>
-       <li>step 2. Place beef tenderloin in a baking dish. Spread 2 tablespoons softened butter over beef.</li>
-       <li>step 3. Bake in the preheated oven until browned, 10 to 15 minutes. Remove beef from the pan and reserve pan juices; allow beef to cool completely.</li>
-       <li>step 4. Increase oven temperature to 450 degrees F (230 degrees C).</li>
-       <li>step 5. Melt 2 tablespoons butter in a skillet over medium heat. Sauté onion and mushrooms in butter for 5 minutes. Remove from heat and let cool.</li>
-       <li>step 6. Mix paté and remaining 2 tablespoons softened butter together in a bowl; season with salt and pepper. Spread paté mixture over beef. Top with onion and mushroom mixture.</li>
-       <li>step 7.Roll out puff pastry dough to about 1/4-inch thickness and place beef in the center.</li>
-       <li>step 8.Fold up and seal all the edges, making sure the seams are not too thick. Place beef in a 9x13-inch baking dish, cut a few slits in the top of dough, and brush with egg yolk.</li>
-       <li>step 9.Bake in the preheated oven for 10 minutes. Reduce heat to 425 degrees F (220 degrees C) and continue baking until pastry is a rich, golden brown, 10 to 15 minutes. An instant-read thermometer inserted into the center should read between 122 to 130 degrees F (50 to 54 degrees C) for medium rare. Set aside to rest.</li>
-       <li>step 10.Meanwhile, place reserved pan juices in a small saucepan over high heat. Stir in beef broth and red wine; boil until slightly reduced, about 5 minutes. Strain and serve with beef.</li>
+   <h2 class="fade">Instructions</h2>
+   <ol id="steps" class="fade">
+       <li>Preheat the oven to 425°F (220°C).</li>
+       <li>Place beef tenderloin in a baking dish; spread 2 tablespoons softened butter over beef.</li>
+       <li>Bake until browned, 10–15 minutes. Reserve pan juices and cool beef.</li>
+       <li>Increase oven temperature to 450°F (230°C).</li>
+       <li>Sauté onion and mushrooms in 2 tablespoons butter for 5 minutes; cool.</li>
+       <li>Mix paté with remaining butter, season, and spread over beef; top with mushrooms/onions.</li>
+       <li>Roll out puff pastry and place beef in the center.</li>
+       <li>Fold and seal pastry; place in a baking dish. Cut slits on top and brush with egg yolk.</li>
+       <li>Bake 10 minutes; reduce heat to 425°F, then bake 10–15 minutes more until golden.</li>
+       <li>Make sauce by boiling pan juices with beef broth and red wine for 5 minutes.</li>
+   </ol>
 
+   <script>
+      // fade-in animation for button
+      document.addEventListener("DOMContentLoaded", () => {
+          const button = document.querySelector(".cute-btn");
+          setTimeout(() => {
+              button.style.transition = "opacity 0.8s ease";
+              button.style.opacity = "1";
+          }, 300);
+      });
+   </script>
 
+   <!-- Link your external JavaScript -->
+   <script src="script.js"></script>
 
-
-         </ol>
 </body>
 </html>

@@ -1,0 +1,96 @@
+body {
+    font-family: Georgia, serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9fdf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #72383D;
+    border-bottom: 3px solid #AC9C8D;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #0b3236;
+    margin-top: 30px;
+}
+
+ul, ol {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Highlight clicked step */
+li.active-step {
+    background-color: #fff7d6;
+    border-left: 6px solid #d6a84f;
+    padding-left: 14px;
+    border-radius: 4px;
+}
+
+/* Fade-in animation */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Back to top button */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 18px;
+    border: none;
+    background: #72383D;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+#backToTop:hover {
+    background: #5c2f33;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+/* CUTE BUTTON */
+.cute-btn {
+    display: inline-block;
+    background-color: #ffe9f3;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 15px;
+    border: 2px solid #ffb8d7;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 15px 0 30px 0;
+    opacity: 0;
+}
+
+.cute-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: #ffd0e6;
+}
